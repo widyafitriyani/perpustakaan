@@ -24,6 +24,21 @@ $data = $query->fetch();
 			<td>:</td>
 			<td><input class="form-control" type="text" name="nama" value="<?= $data['nama']; ?>"></td>
 			</tr>
+			<tr>
+			<td>Alamat</td>
+			<td>:</td>
+			<td><input class="form-control" type="text" name="alamat" value="<?= $data['alamat']; ?>"></td>
+			</tr>
+			<tr>
+			<td>Latitude</td>
+			<td>:</td>
+			<td><input class="form-control" type="text" name="latitude" value="<?= $data['latitude']; ?>"></td>
+			</tr>
+			<tr>
+			<td>Longitude</td>
+			<td>:</td>
+			<td><input class="form-control" type="text" name="longitude" value="<?= $data['longitude']; ?>"></td>
+			</tr>
 		<tr>
 			<td colspan="2"><input type="submit" value="Simpan" name="submit"></td>
 		</tr>

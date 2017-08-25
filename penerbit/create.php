@@ -16,6 +16,21 @@
 			<td><input class="form-control" type="text" name="nama"></td>
 		</tr>
 		<tr>
+			<td>Alamat</td>
+			<td>:</td>
+			<td><input class="form-control" type="text" name="alamat"></td>
+		</tr>
+		<tr>
+			<td>Latitude</td>
+			<td>:</td>
+			<td><input class="form-control" type="text" name="latitude"></td>
+		</tr>
+		<tr>
+			<td>Longitude</td>
+			<td>:</td>
+			<td><input class="form-control" type="text" name="longitude"></td>
+		</tr>
+		<tr>
 			<td colspan="2"><input type="submit" value="Simpan" name="submit"></td>
 		</tr>
 	</table>

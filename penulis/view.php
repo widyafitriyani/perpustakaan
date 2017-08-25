@@ -33,6 +33,6 @@ $data = $query->fetch();
 		<td><?php print $data['alamat']; ?></td>
 	</tr>
 	<tr>
-	<td><a href="map.php"><button type="button" class="btn btn.info">Peta</button></a></td>
+	<td><a href="peta.php"><button type="button" class="btn btn.info">Peta</button></a></td>
 	</tr>
 </table>

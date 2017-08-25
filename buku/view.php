@@ -24,6 +24,16 @@ function getJenis($id) {
     return $data['jenis_buku'];
 }
 
+function getpenulis($id) {
+    include('koneksi.php');
+    $query = $db->prepare("SELECT * FROM buku WHERE id = $id");
+    $query->execute();
+    $data = $query->fetch();
+
+    return $data['nama'];
+
+}
+
 ?>
 <table class="table table-stripped">
 	<tr>
@@ -41,4 +51,8 @@ function getJenis($id) {
 	<td>:</td>
 	<td> <img width="200px" src="cover/<?php print $data['cover']; ?>"/></td>
 </tr>
+<tr>
+	<td>Penulis</td>
+	<td>:</td>
+	<td><?php print getpenulis($penulis['id_penulis']);?></td>
 	</table>

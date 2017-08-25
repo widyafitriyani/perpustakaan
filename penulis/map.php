@@ -6,7 +6,7 @@ include("koneksi.php");
 	<script type="text/javascript">
 		var markers = [
 		<?php
-		$sql = mysqli_query($db, "SELECT * FROM lokasi");
+		$sql = mysqli_query($db, "SELECT * FROM penulis");
 		while(($data =  mysqli_fetch_assoc($sql))) {
 		?>
 		{

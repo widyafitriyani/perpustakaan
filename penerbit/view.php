@@ -23,4 +23,19 @@ $data = $query->fetch();
 		<td>:</td>
 		<td><?php print $data['nama']; ?></td>
 	</tr>
+	<tr>
+		<td>Alamat</td>
+		<td>:</td>
+		<td><?php print $data['alamat']; ?></td>
+	</tr>
+	<tr>
+		<td>Latitude</td>
+		<td>:</td>
+		<td><?php print $data['latitude']; ?></td>
+	</tr>
+	<tr>
+		<td>Longitude</td>
+		<td>:</td>
+		<td><?php print $data['longitude']; ?></td>
+	</tr>
 </table>

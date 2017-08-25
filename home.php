@@ -35,7 +35,7 @@ document.write("WELCOME TO MY WEBSITE, " + getname() + "!");
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <?php if($_SESSION['role'] == 1){ ?>
-              <h3> Welcome Admin!</h3>
+              <h3> Hi, Admin</h3>
               <ul class="nav navbar-nav">
                 <li><a href="http://localhost/perpustakaan-ppi/buku/index.php">Buku</a></li>
                 <li><a href="http://localhost/perpustakaan-ppi/jenis/index.php">Jenis</a></li>
@@ -52,6 +52,7 @@ document.write("WELCOME TO MY WEBSITE, " + getname() + "!");
                 <ul class="nav navbar-nav">
                   <li><a href="http://localhost/perpustakaan-ppi/buku/index.php">Buku</a></li>
                   <li><a href="http://localhost/perpustakaan-ppi/peminjaman/peminjaman.php">Peminjaman</a></li>
+                  <li><a href="http://localhost/perpustakaan-ppi/penerbit/index.php">Penerbit</a></li>
                   <li><a href="http://localhost/perpustakaan-ppi/logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout </a></li>
                 <?php } ?>
             </div>

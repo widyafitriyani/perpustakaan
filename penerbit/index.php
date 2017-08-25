@@ -13,6 +13,7 @@
         <div class="panel-heading"><h2>Penerbit</h2></div>
         <div class="panel-body">
         <a href="create.php" class="btn btn-primary"><i class="glyphicon glyphicon-plus "></i>Tambah Penerbit</a>
+        <a href="maps.php"><button type="button" class="btn btn.info">Maps</button></a>
         <div>&nbsp; </div>
 <?php
 
@@ -28,12 +29,18 @@ $query->execute();
             <tr>
                 <th>No</th>
                 <th>Nama</th>
+                <th>Alamat</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
                 <th>Aksi</th>
             </tr>
             <?php $i=1; foreach ($query->fetchAll() as $value): ?>
             <tr>
                 <td style="text-align: center"><?= $i ?></td>
                 <td><?= $value['nama'] ?></td>
+                <td><?= $value['alamat'] ?></td>
+                <td><?= $value['latitude'] ?></td>
+                <td><?= $value['longitude'] ?></td>
                 <td>
                     <a href="update.php?id=<?= $value['id']; ?>">
                     <span class="glyphicon glyphicon-pencil"></span>

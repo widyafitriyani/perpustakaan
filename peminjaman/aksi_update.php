@@ -2,6 +2,8 @@
 
 include('koneksi.php');
 
+$id = $_GET['id'];
+
 $id_buku = $_POST['id_buku'];
 $id_user = $_POST['id_user'];
 $waktu_dipinjam = $_POST['waktu_dipinjam'];
@@ -11,8 +13,8 @@ print $id_buku.'<br>';
 print $id_user.'<br>';
 print $waktu_dipinjam.'<br>';
 print $waktu_pengembalian.'<br>';
-$query = $db->prepare("INSERT INTO peminjaman (id_buku, id_user, waktu_dipinjam, waktu_pengembalian) VALUES ('$id_buku','$id_user','$waktu_dipinjam','$waktu_pengembalian')");
 
+$query = $db->prepare("UPDATE peminjaman SET id_buku = '$id_buku', id_user = '$id_user', waktu_dipinjam = '$waktu_dipinjam', waktu_pengembalian = '$waktu_pengembalian' WHERE id=$id");
 
 if($query->execute()){
 	header("Location: peminjaman.php");
